@@ -13,8 +13,9 @@ public class WebConfig implements WebMvcConfigurer {
 
         //实现无业务逻辑的 页面跳转  输入 / 跳转到login.html
         registry.addViewController("/aa").setViewName("index");
-        registry.addViewController("/").setViewName("login");
+//        registry.addViewController("/").setViewName("login");
         registry.addViewController("/bb").setViewName("index");
+        registry.addViewController("/login.html").setViewName("login");
 
     }
 
